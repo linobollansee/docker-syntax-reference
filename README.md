@@ -15,7 +15,7 @@
 | `docker rmi <image>` | Removes an image | VC | `docker rmi myapp:latest` |
 | `docker exec -it <container> bash` | Opens an interactive shell in a running container | VC | `docker exec -it web bash` |
 | `docker logs <container>` | Displays logs from a container | VC | `docker logs myapp-container` |
-| `docker-compose up` | Starts services from `docker-compose.yml` | VC | `docker-compose up -d` |
+| `docker-compose up` | Starts services from \`docker-compose.yml\` | VC | `docker-compose up -d` |
 | `docker-compose down` | Stops and removes compose services | VC | `docker-compose down` |
 | `docker-compose build` | Builds or rebuilds compose services | VC | `docker-compose build` |
 | `FROM <base-image>` | Base image for a Dockerfile | VC | `FROM node:20-alpine` |
@@ -42,7 +42,7 @@
 | `docker attach <container>` | Attaches to a running container’s console | C | `docker attach myapp` |
 | `docker rename <old> <new>` | Renames a container | C | `docker rename old_container new_container` |
 | `docker buildx build` | Advanced image builder for multi-architecture builds | LC | `docker buildx build --platform linux/arm64 -t myapp .` |
-| `HEALTHCHECK CMD <command>` | Defines a container health check | LC | `HEALTHCHECK CMD curl -f http://localhost:8080 || exit 1` |
+| `HEALTHCHECK CMD <command>` | Defines a container health check | LC | `HEALTHCHECK CMD curl -f http://localhost:8080 \|\| exit 1` |
 | `USER <name or uid>` | Sets the user for subsequent commands | LC | `USER node` |
 | `VOLUME ["path"]` | Declares a mount point | LC | `VOLUME ["/data"]` |
 | `ONBUILD <command>` | Adds trigger instruction for child images | LC | `ONBUILD COPY . /app` |
