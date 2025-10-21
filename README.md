@@ -54,8 +54,8 @@
 | `docker save -o <file> <image>` | Saves an image as a tar file | LC | `docker save -o myapp.tar myapp:latest` |
 | `docker load -i <file>` | Loads an image from a tar file | LC | `docker load -i myapp.tar` |
 | `STOPSIGNAL <signal>` | Sets signal used to stop container | R | `STOPSIGNAL SIGTERM` |
-| `SHELL ["cmd", "arg"]` | Changes default shell used in `RUN` commands | R | `SHELL ["powershell", "-Command"]` |
-| `ADD <src> <dest>` | Copies files (like `COPY`) but can extract archives and fetch URLs | R | `ADD app.tar.gz /app` |
+| `SHELL ["cmd", "arg"]` | Changes default shell used in RUN commands | R | `SHELL ["powershell", "-Command"]` |
+| `ADD <src> <dest>` | Copies files (like COPY) but can extract archives and fetch URLs | R | `ADD app.tar.gz /app` |
 | `docker save --output <file> <image>` | Alternative syntax for saving image | R | `docker save --output image.tar myapp` |
 | `docker import` / `docker export` | Imports or exports containers as tar archives | R | `docker export myapp > container.tar` |
 | `docker checkpoint create` / `docker restore` | Experimental: snapshot and restore container state | R | `docker checkpoint create myapp snap1` |
